@@ -1,21 +1,20 @@
 {
   "name": "enigmadie-brain-games",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
   "files": [
     "dist"
   ],
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
     "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
-    "build": "^0.1.4"
+    "@babel/preset-env": "^7.1.0"
   },
-  "devDependencies": {},
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build",
@@ -25,11 +24,19 @@
     "type": "git",
     "url": "git+https://github.com/Enigmadie/project-lvl1-s364.git"
   },
-  "author": "",
+  "author": "Albert Kh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Enigmadie/project-lvl1-s364/issues"
   },
   "homepage": "https://github.com/Enigmadie/project-lvl1-s364#readme",
-  "description": ""
+  "description": "project for the games with numbers",
+  "keywords": [
+    "brain",
+    "games",
+    "Hexlet",
+    "project",
+    "numbers",
+    "game"
+  ]
 }
