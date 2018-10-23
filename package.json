@@ -1,0 +1,35 @@
+{
+  "name": "enigmadie-brain-games",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "build": "^0.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enigmadie/project-lvl1-s364.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enigmadie/project-lvl1-s364/issues"
+  },
+  "homepage": "https://github.com/Enigmadie/project-lvl1-s364#readme",
+  "description": ""
+}
