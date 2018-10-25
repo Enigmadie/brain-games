@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import greetingUser from '..';
+import { sayCommonHelloForAll, sayHelloToUser } from '..';
 
-greetingUser();
+sayCommonHelloForAll();
+sayHelloToUser();
