@@ -2,24 +2,22 @@ import { sayCommonHelloForAll } from '..';
 
 import readlineSync from 'readline-sync';
 
+const randomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+const resultForWin = 3;
 export default () => {
-  // common greeting for all
   sayCommonHelloForAll();
   console.log('Answer "yes" if number even otherwise answer "no".');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!`);
-  // function generation random integer
-  const randomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-  // main iter body
-  const iter = (random, acc) => {
-    const resultForWin = 3;
-    const predicate = (random % 2 === 0);
-    if (acc === resultForWin) {
+  const iter = (roundCounter) => {
+    const isEven = question => ((question % 2 === 0) ? 'yes' : 'no');
+    const question = randomInt(0, 99);
+    const trueAnswer = isEven(question);
+    if (roundCounter === resultForWin) {
       console.log(`Congratulations, ${userName}!`);
       return;
     }
-    const trueAnswer = (predicate) ? 'yes' : 'no';
-    console.log(`Question ${random}`);
+    console.log(`Question ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === trueAnswer) {
       console.log('Correct!');
@@ -28,7 +26,7 @@ export default () => {
       console.log(`Let's try again, ${userName}!`);
       return;
     }
-    iter(randomInt(0, 99), acc + 1);
+    iter(roundCounter + 1);
   };
-  iter(randomInt(0, 99), 0);
+  iter(0);
 };
