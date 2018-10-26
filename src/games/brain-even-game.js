@@ -1,9 +1,7 @@
-import { sayCommonHelloForAll } from '..';
-
 import readlineSync from 'readline-sync';
 
-const randomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-const resultForWin = 3;
+import { sayCommonHelloForAll, random as randomInt, resultForWin } from '../game-interface';
+
 export default () => {
   sayCommonHelloForAll();
   console.log('Answer "yes" if number even otherwise answer "no".');
