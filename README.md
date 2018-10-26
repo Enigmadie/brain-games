@@ -7,3 +7,6 @@ Even game
 
 Calculate game
 <a href="https://asciinema.org/a/y6auSiEcvrEJt0uLgFTZqYwrU" target="_blank"><img src="https://asciinema.org/a/y6auSiEcvrEJt0uLgFTZqYwrU.png" /></a>
+
+Nod game
+<a href="https://asciinema.org/a/L2eAMTd7SAwtQFNdrHMsNEqQI" target="_blank"><img src="https://asciinema.org/a/L2eAMTd7SAwtQFNdrHMsNEqQI.png" /></a>

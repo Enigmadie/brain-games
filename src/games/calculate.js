@@ -1,11 +1,11 @@
 import { cons } from 'hexlet-pairs';
 
-import interfaceGame from '../game-interface';
+import gameProcess from '../interface';
 
-import { random } from '../game-general';
+import random from '../utils';
 
-const logicGame = () => {
-  const marks = '-+*';
+const marks = '+-*';
+const generateData = () => {
   const firstInt = random(0, 25);
   const secondInt = random(0, 25);
   const randomMark = marks[random(0, marks.length)];
@@ -27,8 +27,6 @@ const logicGame = () => {
     }
   }
 };
-const gameDescription = 'What is the result of the expression';
+const description = 'What is the result of the expression';
 
-const gameStart = () => interfaceGame(logicGame, gameDescription);
-
-export default gameStart;
+export default () => gameProcess(generateData, description);
