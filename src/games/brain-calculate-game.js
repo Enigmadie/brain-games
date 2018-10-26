@@ -1,44 +1,34 @@
-import readlineSync from 'readline-sync';
+import { cons } from 'hexlet-pairs';
 
-import { cons, car, cdr } from 'hexlet-pairs';
+import interfaceGame from '../game-interface';
 
-import { sayCommonHelloForAll, random, resultForWin } from '../game-interface';
+import { random } from '../game-general';
 
-const marks = '-+*';
-
-export default () => {
-  sayCommonHelloForAll();
-  console.log('What is the result of the expression?');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello ${userName}`);
-  const iter = (roundCounter) => {
-    const question = cons(random(0, 25), random(0, 25));
-    const firstInt = car(question);
-    const secondInt = cdr(question);
-    const isSameMark = (randomMark) => {
-      if (randomMark === '+') {
-        return firstInt + secondInt;
-      } if (randomMark === '-') {
-        return firstInt - secondInt;
-      }
-      return firstInt * secondInt;
-    };
-    const randomMark = marks[random(0, marks.length)];
-    const trueAnswer = isSameMark(randomMark);
-    if (roundCounter === resultForWin) {
-      console.log(`Congratulations, ${userName}!`);
-      return;
+const logicGame = () => {
+  const marks = '-+*';
+  const firstInt = random(0, 25);
+  const secondInt = random(0, 25);
+  const randomMark = marks[random(0, marks.length)];
+  switch (randomMark) {
+    case '+': {
+      const question = (`${firstInt} + ${secondInt}`);
+      const trueAnswer = String(firstInt + secondInt);
+      return cons(question, trueAnswer);
     }
-    console.log(`Question ${firstInt} ${randomMark} ${secondInt}`);
-    const answer = readlineSync.question('Your answer: ');
-    if (Number(answer) === trueAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${trueAnswer}`);
-      console.log(`Let's try again ${userName}!`);
-      return;
+    case '-': {
+      const question = (`${firstInt} - ${secondInt}`);
+      const trueAnswer = String(firstInt - secondInt);
+      return cons(question, trueAnswer);
     }
-    iter(roundCounter + 1);
-  };
-  iter(0);
+    default: {
+      const question = (`${firstInt} * ${secondInt}`);
+      const trueAnswer = String(firstInt * secondInt);
+      return cons(question, trueAnswer);
+    }
+  }
 };
+const gameDescription = 'What is the result of the expression';
+
+const gameStart = () => interfaceGame(logicGame, gameDescription);
+
+export default gameStart;
