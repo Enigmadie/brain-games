@@ -10,3 +10,6 @@ Calculate game
 
 Nod game
 <a href="https://asciinema.org/a/L2eAMTd7SAwtQFNdrHMsNEqQI" target="_blank"><img src="https://asciinema.org/a/L2eAMTd7SAwtQFNdrHMsNEqQI.png" /></a>
+
+Arithmetic progression
+<a href="https://asciinema.org/a/dp7Rp4IxF6s2C2m4vhacKYUuC" target="_blank"><img src="https://asciinema.org/a/dp7Rp4IxF6s2C2m4vhacKYUuC.png" /></a>
