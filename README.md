@@ -8,8 +8,11 @@ Even game
 Calculate game
 <a href="https://asciinema.org/a/y6auSiEcvrEJt0uLgFTZqYwrU" target="_blank"><img src="https://asciinema.org/a/y6auSiEcvrEJt0uLgFTZqYwrU.png" /></a>
 
-Nod game
-<a href="https://asciinema.org/a/L2eAMTd7SAwtQFNdrHMsNEqQI" target="_blank"><img src="https://asciinema.org/a/L2eAMTd7SAwtQFNdrHMsNEqQI.png" /></a>
+Gcd game
+<a href="https://asciinema.org/a/r6SsSiFG7KfPBYjjWcT7y6Lz1" target="_blank"><img src="https://asciinema.org/a/r6SsSiFG7KfPBYjjWcT7y6Lz1.png" /></a>
 
-Arithmetic progression
+Arithmetic progression game
 <a href="https://asciinema.org/a/dp7Rp4IxF6s2C2m4vhacKYUuC" target="_blank"><img src="https://asciinema.org/a/dp7Rp4IxF6s2C2m4vhacKYUuC.png" /></a>
+
+Prime game
+<a href="https://asciinema.org/a/tktML4QM2M62Q6lJT1jmqgE5V" target="_blank"><img src="https://asciinema.org/a/tktML4QM2M62Q6lJT1jmqgE5V.png" /></a>

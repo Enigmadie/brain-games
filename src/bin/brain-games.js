@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { sayCommonHelloForAll, sayHelloToUser } from '..';
+import { greetingUser, meetingUser } from '../game-process';
 
-sayCommonHelloForAll();
-sayHelloToUser();
+greetingUser();
+meetingUser();

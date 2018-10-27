@@ -1,6 +1,6 @@
 import { cons } from 'hexlet-pairs';
 
-import gameProcess from '../interface';
+import gameProcess from '../game-process';
 
 import random from '../utils';
 

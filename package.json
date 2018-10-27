@@ -1,13 +1,14 @@
 {
   "name": "enigmadie-brain-games",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
     "brain-calculate": "dist/bin/brain-calculate.js",
-    "brain-nod": "dist/bin/brain-nod.js",
-    "brain-progression": "dist/bin/brain-progression.js"
+    "brain-gcd": "dist/bin/brain-gcd.js",
+    "brain-progression": "dist/bin/brain-progression.js",
+    "brain-prime": "dist/bin/brain-prime.js"
   },
   "files": [
     "dist"
