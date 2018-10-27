@@ -4,7 +4,7 @@ import gameProcess from '../game-process';
 
 import randomInt from '../utils';
 
-const isPrime = num => {
+const isPrime = (num) => {
   const startDividend = 2;
   const iter = (int, acc) => {
     if (acc === int || int === 1) {
@@ -14,9 +14,9 @@ const isPrime = num => {
       return false;
     }
     return iter(int, acc + 1);
-  }
+  };
   return iter(num, startDividend);
-}
+};
 const generateData = () => {
   const question = randomInt(1, 99);
   const trueAnswer = isPrime(question) ? 'yes' : 'no';
