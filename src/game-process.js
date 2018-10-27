@@ -34,7 +34,6 @@ export default (generateData, description) => {
     if (answer === trueAnswer) {
       console.log('Correct!');
     } else {
-
       console.log(`${answer} is wrong answer ;(. Correct answer was ${trueAnswer}`);
 
       console.log(`Let's try again, ${nickName}!`);
