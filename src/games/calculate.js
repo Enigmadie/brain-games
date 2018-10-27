@@ -7,8 +7,11 @@ import random from '../utils';
 const marks = '+-*';
 const generateData = () => {
   const firstInt = random(0, 25);
+
   const secondInt = random(0, 25);
+
   const randomMark = marks[random(0, marks.length)];
+
   switch (randomMark) {
     case '+': {
       const question = (`${firstInt} + ${secondInt}`);

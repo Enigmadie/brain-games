@@ -17,8 +17,11 @@ const greatestCommonDivisor = (num1, num2) => {
 };
 const generateData = () => {
   const firstInt = random(0, 100);
+
   const secondInt = random(0, 100);
+
   const question = (`${firstInt} ${secondInt}`);
+
   const trueAnswer = greatestCommonDivisor(firstInt, secondInt);
   return cons(question, String(trueAnswer));
 };

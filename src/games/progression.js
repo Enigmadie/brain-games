@@ -18,9 +18,13 @@ const randomProgression = (int, str, count, step, gap) => {
 };
 const generateData = () => {
   const firstInt = random(0, 10);
+
   const gameStep = random(1, 10);
+
   const space = random(0, 10);
+
   const question = randomProgression(firstInt, userString, startCounter, gameStep, space);
+
   const trueAnswer = space * gameStep + firstInt;
   return cons(question, String(trueAnswer));
 };
