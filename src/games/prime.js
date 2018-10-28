@@ -4,17 +4,20 @@ import gameProcess from '../game-process';
 
 import randomInt from '../utils';
 
-const isPrime = (num) => {
-  const startDividend = 2;
+const startDividend = 2;
 
-  const iter = (int, count) => {
-    if (int === count) {
+const isPrime = (num) => {
+  if (num < 2) {
+    return false;
+  }
+  const iter = (int, div) => {
+    if (div > int / 2) {
       return true;
     }
-    if (int % count === 0 || int < 2) {
+    if (int % div === 0) {
       return false;
     }
-    return iter(int, count + 1);
+    return iter(int, div + 1);
   };
   return iter(num, startDividend);
 };
