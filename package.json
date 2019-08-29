@@ -1,6 +1,6 @@
 {
-  "name": "enigmadie-brain-games",
-  "version": "1.1.4",
+  "name": "enigma-brain-games",
+  "version": "1.1.5",
   "main": "",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
@@ -15,18 +15,18 @@
   ],
   "dependencies": {
     "hexlet-pairs": "^1.0.8",
-    "readline-sync": "^1.4.9"
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.7.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-babel": "^5.2.1",
-    "eslint-plugin-import": "^2.14.0"
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.18.2"
   },
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
@@ -35,10 +35,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Enigmadie/project-lvl1-s364.git"
+    "url": "git+https://github.com/Enigmadie/brain-games.git"
   },
   "author": "Albert Kh",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Enigmadie/project-lvl1-s364/issues"
   },
